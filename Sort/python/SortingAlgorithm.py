@@ -109,6 +109,21 @@ def merge_sort(array):
     else:
         return array
 
+#   堆排序
+def max_heap(array, n):
+    for i in range(n-1, 0, -1):
+        j = int((i-1)/2)    #j为父节点
+        if array[i] > array[j]:     #子节点大于父节点，调整
+            array[i], array[j] = array[j], array[i]
+
+def heap_sort(array):
+    n = len(array)
+    for i in range(n, 0, -1):
+        max_heap(array, i)
+        array[0], array[i-1] = array[i-1], array[0]
+    return array
+    
+
 
 
 

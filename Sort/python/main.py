@@ -29,3 +29,7 @@ print("直接选择："+str(sorted_arry))
 array = unsorted_array[:]
 sorted_arry = merge_sort(array)
 print("归并选择："+str(sorted_arry))
+
+array = unsorted_array[:]
+sorted_arry = heap_sort(array)
+print("堆排序："+str(sorted_arry))
