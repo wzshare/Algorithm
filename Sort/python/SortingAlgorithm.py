@@ -31,7 +31,7 @@ def shell_sort(array):
             for j in range(i-gap, -1, -1):
                 if array[j+gap] < array[j]:
                     array[j], array[j+gap] = array[j+gap], array[j]
-        gap = int(gap/2);
+        gap = int(gap/2)
     return array
 
 #   直接选择排序
@@ -70,7 +70,7 @@ def partition(array, left, right):
             array[i], array[j] = array[j], array[i]
             i += 1
     array[i], array[right] = array[right], array[i]
-    return i;
+    return i
 
 def qsort(array, left, right):
     if left < right:
