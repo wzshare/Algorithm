@@ -7,5 +7,3 @@
 //
 
 #include "MatricBacktracking.hpp"
-
-int printLongestPath();
